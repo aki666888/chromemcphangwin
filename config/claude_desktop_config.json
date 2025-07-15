@@ -1,8 +1,10 @@
 {
   "mcpServers": {
-    "chrome": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-chrome"]
+    "chrome-mcp-stdio": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\info0\\AppData\\Roaming\\npm\\node_modules\\mcp-chrome-bridge\\dist\\mcp\\mcp-server-stdio.js"
+      ]
     }
   }
 }
