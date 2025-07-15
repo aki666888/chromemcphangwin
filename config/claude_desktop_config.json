@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "chrome-mcp": {
-      "type": "streamable-http",
-      "url": "http://127.0.0.1:12306/mcp"
+    "chrome": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-chrome"]
     }
   }
 }
