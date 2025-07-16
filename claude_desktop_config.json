@@ -1,0 +1,55 @@
+{
+  "mcpServers": {
+    "google_workspace": {
+      "command": "C:\\Users\\info0\\.local\\bin\\uvx.exe",
+      "args": [
+        "workspace-mcp",
+        "--tools",
+        "gmail",
+        "drive",
+        "calendar",
+        "docs",
+        "sheets"
+      ],
+      "env": {
+        "GOOGLE_OAUTH_CLIENT_ID": "798738413393-uiefp0imd7aotpb3mq28vcgggge8qbt1.apps.googleusercontent.com",
+        "GOOGLE_OAUTH_CLIENT_SECRET": "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",
+        "GOOGLE_OAUTH_REDIRECT_URI": "http://localhost:8000/oauth2callback",
+        "OAUTHLIB_INSECURE_TRANSPORT": "1",
+        "USER_GOOGLE_EMAIL": "contact03.g.office@gmail.com",
+        "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Users\\info0\\.google_workspace_mcp\\credentials\\contact03.g.office@gmail.com.json"
+      }
+    },
+    "notion": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@suekou/mcp-notion-server"
+      ],
+      "env": {
+        "NOTION_API_TOKEN": "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",
+        "NOTION_MARKDOWN_CONVERSION": "true"
+      }
+    },
+    "pdf-forms": {
+      "command": "mcp-pdf-forms",
+      "args": [
+        "C:\\Users\\info0\\Documents",
+        "C:\\Users\\info0\\Downloads"
+      ]
+    },
+    "openrpc": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "openrpc-mcp-server"
+      ]
+    },
+    "chrome-mcp-server": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\info0\\AppData\\Roaming\\npm\\node_modules\\mcp-chrome-bridge\\dist\\mcp\\mcp-server-stdio.js"
+      ]
+    }
+  }
+}
